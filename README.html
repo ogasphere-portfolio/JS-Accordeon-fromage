@@ -1,0 +1,27 @@
+<h1 id="laccordéon">L'accordéon</h1>
+<p>Je fais partie d'un club d'amateurs de fromage de chèvre, et je voulais coder une super FAQ pour notre site… mais comme je suis une chèvre en JS, finalement il faudrait que quelqu'un s'en occupe pour moi 😅</p>
+<p>Alors voilà ce que je veux :</p>
+<ul>
+<li>La FAQ serait sous la forme d'un accordéon (<a href="https://jqueryui.com/accordion/">exemple</a>). L'exemple est fait en jQuery, mais c'est juste pour voir le comportement attendu. Il ne faut pas le faire avec jQuery !</li>
+<li>Quand on clique sur un titre, toutes les autres questions se ferment et celle sur laquelle j'ai cliqué s'ouvre.</li>
+<li>Je veux aussi que la flèche de la question ouverte soit tournée vers le bas, et celles des questions fermées tournées vers la droite !</li>
+</ul>
+<h2 id="on-aura-besoin-de-">On aura besoin de :</h2>
+<ul>
+<li>CSS pour faire du joli, pour gérer les flèches</li>
+<li>de <code>addEventListener</code></li>
+<li>de modifier des classes en JS</li>
+<li>peut-être de <a href="https://developer.mozilla.org/fr/docs/Web/API/Node/parentNode"><code>parentNode</code></a></li>
+</ul>
+<h2 id="un-peu-daide-pour-commencer-">Un peu d'aide pour commencer ?</h2>
+<p><details><br />
+  <summary>spoiler</summary><br />
+  Voilà quelques étapes pour bien démarrer :</p>
+<ul>
+<li>Faire un module JS pour organiser le code au mieux.</li>
+<li>Dans la méthode <code>init</code>, trouver tous les titres et écouter leurs clics.</li>
+<li>Vérifier au clic que la cible du clic est bien le h2 (la flèche étant probablement <em>dans</em> le h2, le clic se déclenche aussi quand on clique dessus, mais c'est bien le h2 qui doit être la cible). Si ce n'est pas le cas, on recible le h2 avec <code>parentNode</code>. Whoua c'est compliqué ! Pourquoi pas faire une première version sans flèche :thinking_face:</li>
+<li>On modifie les classes CSS pour créer l'effet d'accordéon.  <br />
+</details></li>
+</ul>
+<p>La correction se trouve sur la branche du même nom.</p>
